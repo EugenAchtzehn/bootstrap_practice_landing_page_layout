@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Import fontAwesome -->
+    <script src="https://kit.fontawesome.com/210f09aba9.js" crossorigin="anonymous"></script>
+
+    <title>LandingPage_Layout</title>
+
+    <!-- Custom CSS -->
+    <style>
+        .bg-themeColor {
+            background-color: #99d2e6;
+        }
+
+        .btn {
+            border-width: 2px;
+        }
+
+        .form-control {
+            border-width: 2px;
+        }
+
+        .item-height {
+            height: 450px;
+        }
+
+        .bg-adjust {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .feature-bg {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .text-md-dark {
+                color: #000000;
+            }
+
+            .feature-bg {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The Social Media Section -->
+    <div class="py-1" style="background-color: #c2d6d6;">
+        <div class="container text-right">
+            <a href="#" class="mr-1 text-white"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </div>
+
+    <!-- Start the Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-themeColor">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_ANA.svg" height="30" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Summer Offers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">To Taipei</a>
+                            <a class="dropdown-item" href="#">To Seoul</a>
+                            <a class="dropdown-item" href="#">To Hong Kong</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <a href="#" class="btn btn-outline-info mr-2" data-toggle="modal" data-target="#logInModal">Log
+                        In</a>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Start the Slides -->
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item item-height bg-adjust active"
+                    style="background-image: url(https://images.unsplash.com/photo-1535898331935-2d274aff0fbc?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=);">
+                    <div class="carousel-caption d-none d-md-block px-2">
+                        <h3>Taipei</h3>
+                        <p>Enjoy the taste of local dishes from the night market. Relax in villages around like Tamsui
+                            and Jiufen. The hospitality of Taipei never lets you down.</p>
+                    </div>
+                </div>
+                <div class="carousel-item item-height bg-adjust"
+                    style="background-image: url(https://images.unsplash.com/photo-1536599018102-9f803c140fc1?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=)">
+                    <div class="carousel-caption d-none d-md-block px-2">
+                        <h3>Hong Kong</h3>
+                        <p>Pearl of the Orient knows what tourists want. Fantastic cuisine, historic buildings, and
+                            theme parks? Just go to Hong Kong!</p>
+                    </div>
+                </div>
+                <div class="carousel-item item-height bg-adjust"
+                    style="background-image: url(https://images.unsplash.com/photo-1550177205-89d100b75c34?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=);">
+                    <div class="carousel-caption d-none d-md-block px-2">
+                        <h3>Seoul</h3>
+                        <p>Shopping in this sparkling city will never let you tired. You can find fashion designs and
+                            catchy music everywhere. That's just what Koreans shape their capital.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Start the Columns -->
+
+    <section class="bg-success py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3 d-flex justify-content-center"><i class="fas fa-donate fa-3x"></i></div>
+                    <h3 class="d-flex justify-content-center">Lowest Price</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure pariatur saepe similique earum,
+                        est adipisci dolore in voluptate.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 d-flex justify-content-center"><i class="fas fa-plane-departure fa-3x"></i></div>
+                    <h3 class="d-flex justify-content-center">Frequent Flights</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure pariatur saepe similique earum,
+                        est adipisci dolore in voluptate.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 d-flex justify-content-center"><i class="far fa-handshake fa-3x"></i></div>
+                    <h3 class="d-flex justify-content-center">Local Connetion</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure pariatur saepe similique earum,
+                        est adipisci dolore in voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Image & Description -->
+
+    <section class="container-fluid py-5 bg-light" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 bg-adjust"
+                style="position: absolute; top: 0; bottom: 0;
+                background-image: url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=);">
+            </div>
+            <div class="container text-white">
+                <div class="row justify-content-end text-md-dark">
+                    <div class="col-md-7 pt-3 feature-bg">
+                        <h3>A Safe and Sound Journey</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odio sit repellendus et
+                            temporibus veniam, autem perspiciatis saepe ex architecto tempora dolor beatae dolore magni
+                            nulla consectetur animi officiis consequuntur cupiditate earum! Ab nemo qui facere harum,
+                            temporibus laboriosam fuga sint at repellat maxime? Provident similique quisquam beatae sit
+                            dolorem.
+                        </p>
+                        <a href="#" class="btn btn-outline-info">More features</a>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h3>Latest Tech</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eos at earum harum quae
+                                    reiciendis nemo. Dolorem voluptatibus laborum voluptate saepe ea explicabo assumenda
+                                    commodi molestias repellat, laudantium possimus iusto.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Friendly Service</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores molestias
+                                    corporis, autem officia ullam blanditiis aliquid quidem voluptatum ex mollitia
+                                    voluptates itaque expedita, asperiores beatae maiores voluptate alias quae nemo
+                                    debitis repellendus labore quod? Doloremque, repudiandae?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Second Description Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center my-3">The Secret of ANA?</h2>
+            <div class="row wrap">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 text-info"><i class="fas fa-users fa-3x"></i></div>
+                        <div>
+                            <h3>People</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid inventore aspernatur ex
+                                debitis iusto, officiis eos! Molestiae quo atque voluptates! Tempora, debitis. Quidem,
+                                quos
+                                ratione.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 text-info"><i class="fas fa-user-tie fa-3x"></i></div>
+                        <div>
+                            <h3>Profession</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis esse officia
+                                aspernatur,
+                                provident rerum numquam optio, eaque aperiam soluta, quam fugiat. Vero corrupti aliquid
+                                excepturi!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 text-info"><i class="fas fa-heart fa-3x"></i></div>
+                        <div>
+                            <h3>Passion</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus voluptate quis
+                                reiciendis numquam magni adipisci voluptatum? Earum illum obcaecati maiores corporis
+                                harum
+                                qui. Provident?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 text-info"><i class="fas fa-chart-line fa-3x"></i></div>
+                        <div>
+                            <h3>Prospect</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reprehenderit repellat fuga
+                                doloremque praesentium, tempore esse, at quam animi tenetur laudantium accusantium quos
+                                laborum repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Description & Image Section -->
+    <section class="container-fluid bg-light py-5" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 bg-adjust"
+                style="background-image: url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=); position: absolute; top: 0; bottom: 0; right: 0;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-md-7 text-md-dark feature-bg pt-3">
+                    <h3>More Benefits</h3>
+                    <p>Here are more reasons for you to choose All Nippon Airways. Lorem ipsum, dolor sit amet
+                        consectetur
+                        adipisicing elit. Aliquid incidunt, ducimus quisquam quod eum nisi!
+                    </p>
+                    <dl class="row">
+                        <dt class="col-sm-3">Description lists</dt>
+                        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                        <dt class="col-sm-3">Punctuality</dt>
+                        <dd class="col-sm-9">
+                            <p>This content has a p tag outside, which leads to a larger blank space below.</p>
+                        </dd>
+
+                        <dt class="col-sm-3">Safety</dt>
+                        <dd class="col-sm-9">Lorem ipsum dolor sit amet consectetur adipisicing elit.</dd>
+
+                        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                        <dd class="col-sm-9">The .text-truncate class affecting above will replace the redundant content
+                            with
+                            "..." when the viewport is too small to display all.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Map & Form Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105404.23214684387!2d139.67938022862413!3d35.53744099830829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018640ba43192e3%3A0xd32c3a9d146f8df!2z5p2x5Lqs5ZyL6Zqb5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1576830775497!5m2!1szh-TW!2stw"
+                        width="100%" height="480" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="nameInput">Name: *</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="John Smith" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid name.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telInput">Phone: *</label>
+                            <input type="tel" class="form-control" id="telInput" placeholder="09XX123456" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid phone number.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email: *</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="mailbox@example.com"
+                                required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="peopleInput">Accompany: *</label>
+                            <input type="number" class="form-control" id="peopleInput" placeholder="2" required>
+                            <div class="invalid-feedback">
+                                Please select how many people will trvael with you.
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio mt-4">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                required>
+                            <label class="custom-control-label" for="customRadio1">Normal Cuisine</label>
+                        </div>
+                        <div class="custom-control custom-radio mt-2">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                                required>
+                            <label class="custom-control-label" for="customRadio2">Vegetarian Cuisine</label>
+                            <div class="invalid-feedback">
+                                Please select whether you need a vegetarian meal.
+                            </div>
+                        </div>
+                        <div class="text-right mt-4">
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Bottom Background Images & Texts -->
+    <section class="container-fluid text-white">
+        <div class="row">
+            <div class="col-md-6 bg-adjust"
+                style="background-image: url(https://images.unsplash.com/photo-1500400870657-bfbb1c273f08?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9 p-5">
+                        <small>Work with Our Team</small>
+                        <h3>We're Hiring</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium numquam fugit, culpa
+                            quasi aspernatur quis nobis ducimus rem possimus consequuntur totam quae magnam provident,
+                            cupiditate, facilis consequatur excepturi omnis molestias magni. Esse voluptate sequi quae
+                            odit suscipit quia exercitationem repudiandae.
+                        </p>
+                        <a href="#" class="btn btn-outline-warning text-white">Learn More!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-adjust"
+                style="background-image: url(https://images.unsplash.com/photo-1501080182379-9a3ea1ea5d52?dpr=2&auto=format&fit=crop&w=1500&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9 p-5">
+                        <small>Discover the World</small>
+                        <h3>Our Branch Offices</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium numquam fugit, culpa
+                            quasi aspernatur quis nobis ducimus rem possimus consequuntur totam quae magnam provident,
+                            cupiditate, facilis consequatur excepturi omnis molestias magni. Esse voluptate sequi quae
+                            odit suscipit quia exercitationem repudiandae.
+                        </p>
+                        <a href="#" class="btn btn-outline-warning text-white">Let's Go!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the Footer -->
+    <footer class="py-5 bg-light">
+        <div class="container">
+            <span class="text-secondary">
+                Copyright © 2019 Bold & Observant
+            </span>
+            <span class="text-primary">
+                <a href="#" class="ml-2">GitHub</a>
+                <a href="#" class="ml-2">Facebook</a>
+                <a href="#" class="ml-2">About</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- Start the Log In Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="logInEmail" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="logInEmail" placeholder="user@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="logInPassword" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="logInPassword" placeholder="my_Password123">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="logInCheck">
+                            <label class="form-check-label" for="logInCheck">Remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signUpModal">Not a member
+                        yet?</a>
+                    <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Log In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start the Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-secondary col-md-6">
+                            <h3>Become an ANA member</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quo voluptatem
+                                exercitationem
+                                ducimus porro eligendi cumque repellat explicabo quam, eius molestiae repudiandae culpa
+                                odio
+                                adipisci amet velit tempore rerum est optio incidunt doloribus. Rerum, reprehenderit?
+                                Sit a
+                                enim
+                                dolor magni, ut vitae eius sed tenetur odit! Laboriosam aliquam architecto ab.
+                            </p>
+                        </div>
+                        <form class="col-md-6">
+                            <div class="form-group">
+                                <label for="signUpEmail" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="signUpEmail"
+                                    placeholder="user@example.com">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="signUpPassword" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="signUpPassword"
+                                    placeholder="my_Password123">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword" class="col-form-label">Confirm Password:</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="my_Password123">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="signUpCheck">
+                                <label class="form-check-label" for="signUpCheck">I understand the terms.</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#logInModal">Have an account
+                        already?</a>
+                    <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Code for Input Data Validation -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <!-- jQuery Code for correcting the bug of switching modals -->
+    <script>
+        $(document).ready(function () {
+            $('a[data-toggle="modal"][data-dismiss="modal"]').on('click', function () {
+                var target = $(this).data('target');
+                $(target).on('shown.bs.modal', function () {
+                    $('body').addClass('modal-open');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
